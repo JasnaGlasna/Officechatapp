@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to My Office Chat App</title>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 200;
+            background-color: #CDFFEC;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            color: red;
+            text-align: center;
+            margin-top: 200px;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        input[type="email"], input[type="password"] {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: white;
+            color: grey;
+            border: none;
+            border-radius: 100px;
+            width: 300px; /* Adjusted width */
+        }
+        button {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 50px auto;
+            padding: 10px 20px;
+            background-color: white;
+            color: red;
+            border: none;
+            border-radius: 100px;
+            width: 300px; /* Adjusted width */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Office Chat App</h1>
+        <form action="/api/v1/auth/login" method="post">
+            <input type="email" id="email" name="email" placeholder="Enter your email here" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password here" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

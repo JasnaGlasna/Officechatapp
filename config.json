@@ -1,0 +1,13 @@
+{
+    "development": {
+      "port": 10000,
+      "MONGO_USERNAME": "jasnaaleksandrova",
+      "MONGO_PASSWORD": "atTvhXysBgaeJBCo",
+      "jwt": "secret"
+    },
+    "production": {
+      "port": 8080,
+      "MONGO_USERNAME": "admin",
+      "MONGO_PASSWORD": "adminpassword"
+    }
+  }
